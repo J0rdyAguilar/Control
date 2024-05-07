@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAgregarE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAgregarS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAABD9JREFUWEfFl12MnFMYx3cWLRbdENEKWSEo4oZKCOm4aIVGqMQ0TWYYnV0z856P
+        vAAADrwBlbxySQAABD9JREFUWEfFl12MnFMYx3cWLRbdENEKWSEo4oZKCOm4aIVGqMQ0TWYYnV0z856P
         97Vd9RlGQmKJC0RvKi56I0QEETeNkAYNaUgk3GgTFUQQ6rKiEb//mTNrZmx337fdxpOcnHOe5znn+Z/n
         650ZyUvGmCuSxJlarTYWWcefGtaem7j0AWP9l9b5n5j/ZnzTtHZNVDkuNGpMusEY/y7G/mDsTJxbV6lU
         lrH+E/5dzL8a4+6N+ktGJS6vGpt+bXlxYm270WicHmUjADhBADqdzqhzbnVi/T5AdKL42Cmx7g2Mf9F2
@@ -142,16 +142,4 @@
         znw4n978A5vYJtvTzTBm/5/hN/0Dq9alxmfJFsoAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="EdificiosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>245, 17</value>
-  </metadata>
-  <metadata name="ControlServiciosDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="EdificiosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>457, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
 </root>

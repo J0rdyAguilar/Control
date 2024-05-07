@@ -94,6 +94,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ControlServiciosDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmClientesC.Designer.vb">
+      <DependentUpon>frmClientesC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesD.Designer.vb">
+      <DependentUpon>frmClientesD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesR.Designer.vb">
+      <DependentUpon>frmClientesR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesU.Designer.vb">
+      <DependentUpon>frmClientesU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesU.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmEdificiosD.Designer.vb">
       <DependentUpon>frmEdificiosD.vb</DependentUpon>
     </Compile>
@@ -130,6 +154,78 @@
     <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmOficinasC.Designer.vb">
+      <DependentUpon>frmOficinasC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOficinasC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOficinasD.Designer.vb">
+      <DependentUpon>frmOficinasD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOficinasD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOficinasR.Designer.vb">
+      <DependentUpon>frmOficinasR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOficinasR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOficinasU.Designer.vb">
+      <DependentUpon>frmOficinasU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOficinasU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiciosC.Designer.vb">
+      <DependentUpon>frmServiciosC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiciosC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiciosE.Designer.vb">
+      <DependentUpon>frmServiciosD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiciosD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiciosR.Designer.vb">
+      <DependentUpon>frmServiciosR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiciosR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiciosU.Designer.vb">
+      <DependentUpon>frmServiciosU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiciosU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnicosC.Designer.vb">
+      <DependentUpon>frmTecnicosC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnicosC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnicosD.Designer.vb">
+      <DependentUpon>frmTecnicosD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnicosD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnicosR.Designer.vb">
+      <DependentUpon>frmTecnicosR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnicosR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnicosU.Designer.vb">
+      <DependentUpon>frmTecnicosU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnicosU.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Incio.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +254,18 @@
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesC.resx">
+      <DependentUpon>frmClientesC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesD.resx">
+      <DependentUpon>frmClientesD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesR.resx">
+      <DependentUpon>frmClientesR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesU.resx">
+      <DependentUpon>frmClientesU.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEdificiosC.resx">
       <DependentUpon>frmEdificiosC.vb</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +280,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOficinasC.resx">
+      <DependentUpon>frmOficinasC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOficinasD.resx">
+      <DependentUpon>frmOficinasD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOficinasR.resx">
+      <DependentUpon>frmOficinasR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOficinasU.resx">
+      <DependentUpon>frmOficinasU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiciosC.resx">
+      <DependentUpon>frmServiciosC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiciosD.resx">
+      <DependentUpon>frmServiciosD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiciosR.resx">
+      <DependentUpon>frmServiciosR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiciosU.resx">
+      <DependentUpon>frmServiciosU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnicosC.resx">
+      <DependentUpon>frmTecnicosC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnicosD.resx">
+      <DependentUpon>frmTecnicosD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnicosR.resx">
+      <DependentUpon>frmTecnicosR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnicosU.resx">
+      <DependentUpon>frmTecnicosU.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Incio.resx">
       <DependentUpon>Incio.vb</DependentUpon>

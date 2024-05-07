@@ -29,14 +29,14 @@ Partial Class frmEdificiosC
         Me.txtAgregarE = New System.Windows.Forms.TextBox()
         Me.btnAgregarE = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ControlServiciosDataSet2 = New CapaPresentacion.ControlServiciosDataSet2()
-        Me.EdificiosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EdificiosTableAdapter = New CapaPresentacion.ControlServiciosDataSet2TableAdapters.EdificiosTableAdapter()
         Me.NumEdificioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomEdificioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EdificiosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ControlServiciosDataSet2 = New CapaPresentacion.ControlServiciosDataSet2()
+        Me.EdificiosTableAdapter = New CapaPresentacion.ControlServiciosDataSet2TableAdapters.EdificiosTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ControlServiciosDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ControlServiciosDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -91,20 +91,6 @@ Partial Class frmEdificiosC
         Me.DataGridView1.Size = New System.Drawing.Size(414, 152)
         Me.DataGridView1.TabIndex = 4
         '
-        'ControlServiciosDataSet2
-        '
-        Me.ControlServiciosDataSet2.DataSetName = "ControlServiciosDataSet2"
-        Me.ControlServiciosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EdificiosBindingSource
-        '
-        Me.EdificiosBindingSource.DataMember = "Edificios"
-        Me.EdificiosBindingSource.DataSource = Me.ControlServiciosDataSet2
-        '
-        'EdificiosTableAdapter
-        '
-        Me.EdificiosTableAdapter.ClearBeforeFill = True
-        '
         'NumEdificioDataGridViewTextBoxColumn
         '
         Me.NumEdificioDataGridViewTextBoxColumn.DataPropertyName = "numEdificio"
@@ -122,6 +108,20 @@ Partial Class frmEdificiosC
         Me.NomEdificioDataGridViewTextBoxColumn.Name = "NomEdificioDataGridViewTextBoxColumn"
         Me.NomEdificioDataGridViewTextBoxColumn.Width = 125
         '
+        'EdificiosBindingSource
+        '
+        Me.EdificiosBindingSource.DataMember = "Edificios"
+        Me.EdificiosBindingSource.DataSource = Me.ControlServiciosDataSet2
+        '
+        'ControlServiciosDataSet2
+        '
+        Me.ControlServiciosDataSet2.DataSetName = "ControlServiciosDataSet2"
+        Me.ControlServiciosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EdificiosTableAdapter
+        '
+        Me.EdificiosTableAdapter.ClearBeforeFill = True
+        '
         'frmEdificiosC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -136,8 +136,8 @@ Partial Class frmEdificiosC
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Edificios"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ControlServiciosDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ControlServiciosDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

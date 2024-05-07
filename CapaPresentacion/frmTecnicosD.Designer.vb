@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmOficinasD
+Partial Class frmTecnicosD
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,85 +22,97 @@ Partial Class frmOficinasD
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOficinasD))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTecnicosD))
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtDPIET = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.btnEliminarO = New System.Windows.Forms.Button()
-        Me.txtEliminarO = New System.Windows.Forms.TextBox()
+        Me.btnEliminarT = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(211, 222)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(29, 16)
+        Me.Label5.TabIndex = 32
+        Me.Label5.Text = "DPI"
+        '
+        'txtDPIET
+        '
+        Me.txtDPIET.Location = New System.Drawing.Point(275, 222)
+        Me.txtDPIET.Name = "txtDPIET"
+        Me.txtDPIET.Size = New System.Drawing.Size(285, 22)
+        Me.txtDPIET.TabIndex = 31
+        '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(220, 290)
+        Me.DataGridView1.Location = New System.Drawing.Point(179, 282)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(414, 152)
-        Me.DataGridView1.TabIndex = 19
+        Me.DataGridView1.TabIndex = 27
         '
-        'btnEliminarO
+        'btnEliminarT
         '
-        Me.btnEliminarO.Font = New System.Drawing.Font("MV Boli", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarO.Image = CType(resources.GetObject("btnEliminarO.Image"), System.Drawing.Image)
-        Me.btnEliminarO.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.btnEliminarO.Location = New System.Drawing.Point(687, 459)
-        Me.btnEliminarO.Name = "btnEliminarO"
-        Me.btnEliminarO.Size = New System.Drawing.Size(131, 93)
-        Me.btnEliminarO.TabIndex = 18
-        Me.btnEliminarO.Text = "Eliminar"
-        Me.btnEliminarO.UseVisualStyleBackColor = True
-        '
-        'txtEliminarO
-        '
-        Me.txtEliminarO.Location = New System.Drawing.Point(269, 210)
-        Me.txtEliminarO.Name = "txtEliminarO"
-        Me.txtEliminarO.Size = New System.Drawing.Size(285, 22)
-        Me.txtEliminarO.TabIndex = 17
+        Me.btnEliminarT.Font = New System.Drawing.Font("MV Boli", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminarT.Image = CType(resources.GetObject("btnEliminarT.Image"), System.Drawing.Image)
+        Me.btnEliminarT.ImageAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btnEliminarT.Location = New System.Drawing.Point(695, 461)
+        Me.btnEliminarT.Name = "btnEliminarT"
+        Me.btnEliminarT.Size = New System.Drawing.Size(131, 93)
+        Me.btnEliminarT.TabIndex = 26
+        Me.btnEliminarT.Text = "Eliminar"
+        Me.btnEliminarT.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MV Boli", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(290, 150)
+        Me.Label2.Location = New System.Drawing.Point(298, 161)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(236, 37)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Eliminar Oficina"
+        Me.Label2.Size = New System.Drawing.Size(243, 37)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Eliminar Tecnico"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MV Boli", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(107, 0)
+        Me.Label1.Location = New System.Drawing.Point(97, 4)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(611, 157)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "OFICINAS"
+        Me.Label1.Size = New System.Drawing.Size(646, 157)
+        Me.Label1.TabIndex = 23
+        Me.Label1.Text = "TECNICOS"
         '
-        'frmOficinasD
+        'frmTecnicosD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(885, 587)
+        Me.ClientSize = New System.Drawing.Size(923, 558)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtDPIET)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.btnEliminarO)
-        Me.Controls.Add(Me.txtEliminarO)
+        Me.Controls.Add(Me.btnEliminarT)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "frmOficinasD"
-        Me.Text = "frmOficinasD"
+        Me.Name = "frmTecnicosD"
+        Me.Text = "frmTecnicosD"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtDPIET As TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents btnEliminarO As Button
-    Friend WithEvents txtEliminarO As TextBox
+    Friend WithEvents btnEliminarT As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
 End Class

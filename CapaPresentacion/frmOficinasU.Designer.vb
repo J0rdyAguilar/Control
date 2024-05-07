@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmOficinasD
+Partial Class frmOficinasU
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,10 +22,10 @@ Partial Class frmOficinasD
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOficinasD))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOficinasU))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.btnEliminarO = New System.Windows.Forms.Button()
-        Me.txtEliminarO = New System.Windows.Forms.TextBox()
+        Me.btnActualizarO = New System.Windows.Forms.Button()
+        Me.txtActualizarO = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -34,64 +34,64 @@ Partial Class frmOficinasD
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(220, 290)
+        Me.DataGridView1.Location = New System.Drawing.Point(271, 296)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(414, 152)
-        Me.DataGridView1.TabIndex = 19
+        Me.DataGridView1.TabIndex = 14
         '
-        'btnEliminarO
+        'btnActualizarO
         '
-        Me.btnEliminarO.Font = New System.Drawing.Font("MV Boli", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarO.Image = CType(resources.GetObject("btnEliminarO.Image"), System.Drawing.Image)
-        Me.btnEliminarO.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.btnEliminarO.Location = New System.Drawing.Point(687, 459)
-        Me.btnEliminarO.Name = "btnEliminarO"
-        Me.btnEliminarO.Size = New System.Drawing.Size(131, 93)
-        Me.btnEliminarO.TabIndex = 18
-        Me.btnEliminarO.Text = "Eliminar"
-        Me.btnEliminarO.UseVisualStyleBackColor = True
+        Me.btnActualizarO.Font = New System.Drawing.Font("MV Boli", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActualizarO.Image = CType(resources.GetObject("btnActualizarO.Image"), System.Drawing.Image)
+        Me.btnActualizarO.ImageAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btnActualizarO.Location = New System.Drawing.Point(738, 465)
+        Me.btnActualizarO.Name = "btnActualizarO"
+        Me.btnActualizarO.Size = New System.Drawing.Size(131, 93)
+        Me.btnActualizarO.TabIndex = 13
+        Me.btnActualizarO.Text = "Actualizar"
+        Me.btnActualizarO.UseVisualStyleBackColor = True
         '
-        'txtEliminarO
+        'txtActualizarO
         '
-        Me.txtEliminarO.Location = New System.Drawing.Point(269, 210)
-        Me.txtEliminarO.Name = "txtEliminarO"
-        Me.txtEliminarO.Size = New System.Drawing.Size(285, 22)
-        Me.txtEliminarO.TabIndex = 17
+        Me.txtActualizarO.Location = New System.Drawing.Point(320, 216)
+        Me.txtActualizarO.Name = "txtActualizarO"
+        Me.txtActualizarO.Size = New System.Drawing.Size(285, 22)
+        Me.txtActualizarO.TabIndex = 12
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MV Boli", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(290, 150)
+        Me.Label2.Location = New System.Drawing.Point(341, 156)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(236, 37)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Eliminar Oficina"
+        Me.Label2.Size = New System.Drawing.Size(265, 37)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Actualizar Oficina"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MV Boli", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(107, 0)
+        Me.Label1.Location = New System.Drawing.Point(158, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(611, 157)
-        Me.Label1.TabIndex = 15
+        Me.Label1.TabIndex = 10
         Me.Label1.Text = "OFICINAS"
         '
-        'frmOficinasD
+        'frmOficinasU
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(885, 587)
+        Me.ClientSize = New System.Drawing.Size(940, 586)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.btnEliminarO)
-        Me.Controls.Add(Me.txtEliminarO)
+        Me.Controls.Add(Me.btnActualizarO)
+        Me.Controls.Add(Me.txtActualizarO)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "frmOficinasD"
-        Me.Text = "frmOficinasD"
+        Me.Name = "frmOficinasU"
+        Me.Text = "frmOficinasU"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -99,8 +99,8 @@ Partial Class frmOficinasD
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents btnEliminarO As Button
-    Friend WithEvents txtEliminarO As TextBox
+    Friend WithEvents btnActualizarO As Button
+    Friend WithEvents txtActualizarO As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
 End Class
