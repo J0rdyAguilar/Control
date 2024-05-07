@@ -30,7 +30,7 @@ Partial Class frmServiciosU
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtCodSerAc = New System.Windows.Forms.TextBox()
+        Me.txtCodSerAct = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -101,12 +101,12 @@ Partial Class frmServiciosU
         Me.Label5.TabIndex = 46
         Me.Label5.Text = "Codigo"
         '
-        'txtCodSerAc
+        'txtCodSerAct
         '
-        Me.txtCodSerAc.Location = New System.Drawing.Point(260, 246)
-        Me.txtCodSerAc.Name = "txtCodSerAc"
-        Me.txtCodSerAc.Size = New System.Drawing.Size(285, 22)
-        Me.txtCodSerAc.TabIndex = 45
+        Me.txtCodSerAct.Location = New System.Drawing.Point(260, 246)
+        Me.txtCodSerAct.Name = "txtCodSerAct"
+        Me.txtCodSerAct.Size = New System.Drawing.Size(285, 22)
+        Me.txtCodSerAct.TabIndex = 45
         '
         'frmServiciosU
         '
@@ -114,7 +114,7 @@ Partial Class frmServiciosU
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(851, 599)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtCodSerAc)
+        Me.Controls.Add(Me.txtCodSerAct)
         Me.Controls.Add(Me.label4)
         Me.Controls.Add(Me.txtEstServAc)
         Me.Controls.Add(Me.DataGridView1)
@@ -135,5 +135,5 @@ Partial Class frmServiciosU
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtCodSerAc As TextBox
+    Friend WithEvents txtCodSerAct As TextBox
 End Class
