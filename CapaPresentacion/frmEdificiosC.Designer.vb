@@ -29,14 +29,18 @@ Partial Class frmEdificiosC
         Me.txtAgregarE = New System.Windows.Forms.TextBox()
         Me.btnAgregarE = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.NumEdificioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NomEdificioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EdificiosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.EdificiosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ControlServiciosDataSet2 = New CapaPresentacion.ControlServiciosDataSet2()
-        Me.EdificiosTableAdapter = New CapaPresentacion.ControlServiciosDataSet2TableAdapters.EdificiosTableAdapter()
+        Me.DgvInsertarE = New CapaPresentacion.dgvInsertarE()
+        Me.EdificiosBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EdificiosTableAdapter = New CapaPresentacion.dgvInsertarETableAdapters.EdificiosTableAdapter()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EdificiosBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ControlServiciosDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvInsertarE, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EdificiosBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -82,45 +86,53 @@ Partial Class frmEdificiosC
         '
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumEdificioDataGridViewTextBoxColumn, Me.NomEdificioDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.EdificiosBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(251, 310)
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
+        Me.DataGridView1.DataSource = Me.EdificiosBindingSource2
+        Me.DataGridView1.Location = New System.Drawing.Point(206, 281)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(414, 152)
+        Me.DataGridView1.Size = New System.Drawing.Size(491, 208)
         Me.DataGridView1.TabIndex = 4
         '
-        'NumEdificioDataGridViewTextBoxColumn
+        'EdificiosBindingSource1
         '
-        Me.NumEdificioDataGridViewTextBoxColumn.DataPropertyName = "numEdificio"
-        Me.NumEdificioDataGridViewTextBoxColumn.HeaderText = "numEdificio"
-        Me.NumEdificioDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NumEdificioDataGridViewTextBoxColumn.Name = "NumEdificioDataGridViewTextBoxColumn"
-        Me.NumEdificioDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NumEdificioDataGridViewTextBoxColumn.Width = 125
-        '
-        'NomEdificioDataGridViewTextBoxColumn
-        '
-        Me.NomEdificioDataGridViewTextBoxColumn.DataPropertyName = "nomEdificio"
-        Me.NomEdificioDataGridViewTextBoxColumn.HeaderText = "nomEdificio"
-        Me.NomEdificioDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NomEdificioDataGridViewTextBoxColumn.Name = "NomEdificioDataGridViewTextBoxColumn"
-        Me.NomEdificioDataGridViewTextBoxColumn.Width = 125
+        Me.EdificiosBindingSource1.DataMember = "Edificios"
         '
         'EdificiosBindingSource
         '
         Me.EdificiosBindingSource.DataMember = "Edificios"
-        Me.EdificiosBindingSource.DataSource = Me.ControlServiciosDataSet2
         '
-        'ControlServiciosDataSet2
+        'DgvInsertarE
         '
-        Me.ControlServiciosDataSet2.DataSetName = "ControlServiciosDataSet2"
-        Me.ControlServiciosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.DgvInsertarE.DataSetName = "dgvInsertarE"
+        Me.DgvInsertarE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EdificiosBindingSource2
+        '
+        Me.EdificiosBindingSource2.DataMember = "Edificios"
+        Me.EdificiosBindingSource2.DataSource = Me.DgvInsertarE
         '
         'EdificiosTableAdapter
         '
         Me.EdificiosTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "numEdificio"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "numEdificio"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 125
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "nomEdificio"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "nomEdificio"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 125
         '
         'frmEdificiosC
         '
@@ -136,8 +148,10 @@ Partial Class frmEdificiosC
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Edificios"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EdificiosBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ControlServiciosDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvInsertarE, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EdificiosBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -148,9 +162,16 @@ Partial Class frmEdificiosC
     Friend WithEvents txtAgregarE As TextBox
     Friend WithEvents btnAgregarE As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents ControlServiciosDataSet2 As ControlServiciosDataSet2
     Friend WithEvents EdificiosBindingSource As BindingSource
-    Friend WithEvents EdificiosTableAdapter As ControlServiciosDataSet2TableAdapters.EdificiosTableAdapter
     Friend WithEvents NumEdificioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents NomEdificioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+
+    Friend WithEvents EdificiosBindingSource1 As BindingSource
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DgvInsertarE As dgvInsertarE
+    Friend WithEvents EdificiosBindingSource2 As BindingSource
+    Friend WithEvents EdificiosTableAdapter As dgvInsertarETableAdapters.EdificiosTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
 End Class

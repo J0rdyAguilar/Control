@@ -74,25 +74,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="ControlServiciosDataSet.Designer.vb">
+    <Compile Include="dgvActualizarE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ControlServiciosDataSet.xsd</DependentUpon>
+      <DependentUpon>dgvActualizarE.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ControlServiciosDataSet1.Designer.vb">
+    <Compile Include="dgvEliminarE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ControlServiciosDataSet1.xsd</DependentUpon>
+      <DependentUpon>dgvEliminarE.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ControlServiciosDataSet2.Designer.vb">
+    <Compile Include="dgvInsertarE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ControlServiciosDataSet2.xsd</DependentUpon>
+      <DependentUpon>dgvInsertarE.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ControlServiciosDataSet3.Designer.vb">
+    <Compile Include="dgvVerE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ControlServiciosDataSet3.xsd</DependentUpon>
+      <DependentUpon>dgvVerE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.Designer.vb">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmClientesC.Designer.vb">
       <DependentUpon>frmClientesC.vb</DependentUpon>
@@ -202,6 +208,12 @@
     <Compile Include="frmServiciosU.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmTecnicos.Designer.vb">
+      <DependentUpon>frmTecnicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTecnicosC.Designer.vb">
       <DependentUpon>frmTecnicosC.vb</DependentUpon>
     </Compile>
@@ -254,6 +266,9 @@
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClientesC.resx">
       <DependentUpon>frmClientesC.vb</DependentUpon>
     </EmbeddedResource>
@@ -305,6 +320,9 @@
     <EmbeddedResource Include="frmServiciosU.resx">
       <DependentUpon>frmServiciosU.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnicos.resx">
+      <DependentUpon>frmTecnicos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTecnicosC.resx">
       <DependentUpon>frmTecnicosC.vb</DependentUpon>
     </EmbeddedResource>
@@ -328,49 +346,49 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ControlServiciosDataSet.xsc">
-      <DependentUpon>ControlServiciosDataSet.xsd</DependentUpon>
+    <None Include="dgvActualizarE.xsc">
+      <DependentUpon>dgvActualizarE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet.xsd">
+    <None Include="dgvActualizarE.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ControlServiciosDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>dgvActualizarE.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ControlServiciosDataSet.xss">
-      <DependentUpon>ControlServiciosDataSet.xsd</DependentUpon>
+    <None Include="dgvActualizarE.xss">
+      <DependentUpon>dgvActualizarE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet1.xsc">
-      <DependentUpon>ControlServiciosDataSet1.xsd</DependentUpon>
+    <None Include="dgvEliminarE.xsc">
+      <DependentUpon>dgvEliminarE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet1.xsd">
+    <None Include="dgvEliminarE.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ControlServiciosDataSet1.Designer.vb</LastGenOutput>
+      <LastGenOutput>dgvEliminarE.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ControlServiciosDataSet1.xss">
-      <DependentUpon>ControlServiciosDataSet1.xsd</DependentUpon>
+    <None Include="dgvEliminarE.xss">
+      <DependentUpon>dgvEliminarE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet2.xsc">
-      <DependentUpon>ControlServiciosDataSet2.xsd</DependentUpon>
+    <None Include="dgvInsertarE.xsc">
+      <DependentUpon>dgvInsertarE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet2.xsd">
+    <None Include="dgvInsertarE.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ControlServiciosDataSet2.Designer.vb</LastGenOutput>
+      <LastGenOutput>dgvInsertarE.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ControlServiciosDataSet2.xss">
-      <DependentUpon>ControlServiciosDataSet2.xsd</DependentUpon>
+    <None Include="dgvInsertarE.xss">
+      <DependentUpon>dgvInsertarE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet3.xsc">
-      <DependentUpon>ControlServiciosDataSet3.xsd</DependentUpon>
+    <None Include="dgvVerE.xsc">
+      <DependentUpon>dgvVerE.xsd</DependentUpon>
     </None>
-    <None Include="ControlServiciosDataSet3.xsd">
+    <None Include="dgvVerE.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ControlServiciosDataSet3.Designer.vb</LastGenOutput>
+      <LastGenOutput>dgvVerE.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ControlServiciosDataSet3.xss">
-      <DependentUpon>ControlServiciosDataSet3.xsd</DependentUpon>
+    <None Include="dgvVerE.xss">
+      <DependentUpon>dgvVerE.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

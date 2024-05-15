@@ -20,9 +20,9 @@ Option Explicit On
  Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
  Global.System.ComponentModel.ToolboxItem(true),  _
  Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"),  _
- Global.System.Xml.Serialization.XmlRootAttribute("ControlServiciosDataSet1"),  _
+ Global.System.Xml.Serialization.XmlRootAttribute("dgvEliminarE"),  _
  Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>  _
-Partial Public Class ControlServiciosDataSet1
+Partial Public Class dgvEliminarE
     Inherits Global.System.Data.DataSet
     
     Private tableEdificios As EdificiosDataTable
@@ -128,7 +128,7 @@ Partial Public Class ControlServiciosDataSet1
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
     Public Overrides Function Clone() As Global.System.Data.DataSet
-        Dim cln As ControlServiciosDataSet1 = CType(MyBase.Clone,ControlServiciosDataSet1)
+        Dim cln As dgvEliminarE = CType(MyBase.Clone,dgvEliminarE)
         cln.InitVars
         cln.SchemaSerializationMode = Me.SchemaSerializationMode
         Return cln
@@ -199,9 +199,9 @@ Partial Public Class ControlServiciosDataSet1
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
     Private Sub InitClass()
-        Me.DataSetName = "ControlServiciosDataSet1"
+        Me.DataSetName = "dgvEliminarE"
         Me.Prefix = ""
-        Me.Namespace = "http://tempuri.org/ControlServiciosDataSet1.xsd"
+        Me.Namespace = "http://tempuri.org/dgvEliminarE.xsd"
         Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
         Me.tableEdificios = New EdificiosDataTable()
@@ -225,7 +225,7 @@ Partial Public Class ControlServiciosDataSet1
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
     Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-        Dim ds As ControlServiciosDataSet1 = New ControlServiciosDataSet1()
+        Dim ds As dgvEliminarE = New dgvEliminarE()
         Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
         Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
         Dim any As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
@@ -424,7 +424,7 @@ Partial Public Class ControlServiciosDataSet1
             Me.columnnumEdificio.AllowDBNull = false
             Me.columnnumEdificio.ReadOnly = true
             Me.columnnumEdificio.Unique = true
-            Me.columnnomEdificio.MaxLength = 50
+            Me.columnnomEdificio.MaxLength = 25
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -492,7 +492,7 @@ Partial Public Class ControlServiciosDataSet1
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As ControlServiciosDataSet1 = New ControlServiciosDataSet1()
+            Dim ds As dgvEliminarE = New dgvEliminarE()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -645,7 +645,7 @@ Partial Public Class ControlServiciosDataSet1
     End Class
 End Class
 
-Namespace ControlServiciosDataSet1TableAdapters
+Namespace dgvEliminarETableAdapters
     
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
@@ -810,7 +810,7 @@ Namespace ControlServiciosDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.CapaPresentacion.My.MySettings.Default.ControlServiciosConnectionString
+            Me._connection.ConnectionString = Global.CapaPresentacion.My.MySettings.Default.dgvInsertarE
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -827,7 +827,7 @@ Namespace ControlServiciosDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As ControlServiciosDataSet1.EdificiosDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As dgvEliminarE.EdificiosDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -840,9 +840,9 @@ Namespace ControlServiciosDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As ControlServiciosDataSet1.EdificiosDataTable
+        Public Overloads Overridable Function GetData() As dgvEliminarE.EdificiosDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As ControlServiciosDataSet1.EdificiosDataTable = New ControlServiciosDataSet1.EdificiosDataTable()
+            Dim dataTable As dgvEliminarE.EdificiosDataTable = New dgvEliminarE.EdificiosDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -850,14 +850,14 @@ Namespace ControlServiciosDataSet1TableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As ControlServiciosDataSet1.EdificiosDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As dgvEliminarE.EdificiosDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As ControlServiciosDataSet1) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As dgvEliminarE) As Integer
             Return Me.Adapter.Update(dataSet, "Edificios")
         End Function
         
@@ -1063,7 +1063,7 @@ Namespace ControlServiciosDataSet1TableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
-        Private Function UpdateUpdatedRows(ByVal dataSet As ControlServiciosDataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateUpdatedRows(ByVal dataSet As dgvEliminarE, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._edificiosTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.Edificios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
@@ -1082,7 +1082,7 @@ Namespace ControlServiciosDataSet1TableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
-        Private Function UpdateInsertedRows(ByVal dataSet As ControlServiciosDataSet1, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateInsertedRows(ByVal dataSet As dgvEliminarE, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._edificiosTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.Edificios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
@@ -1100,7 +1100,7 @@ Namespace ControlServiciosDataSet1TableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
-        Private Function UpdateDeletedRows(ByVal dataSet As ControlServiciosDataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateDeletedRows(ByVal dataSet As dgvEliminarE, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._edificiosTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.Edificios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
@@ -1144,7 +1144,7 @@ Namespace ControlServiciosDataSet1TableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
-        Public Overridable Function UpdateAll(ByVal dataSet As ControlServiciosDataSet1) As Integer
+        Public Overridable Function UpdateAll(ByVal dataSet As dgvEliminarE) As Integer
             If (dataSet Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("dataSet")
             End If

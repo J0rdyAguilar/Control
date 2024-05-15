@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("ControlServiciosConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=TUF-GAMING\SQLEXPRESS;Initial Catalog=Control3;Persist Security Info="& _ 
+            "True;User ID=sa;Password=Cuilco123;TrustServerCertificate=True")>  _
+        Public ReadOnly Property dgvInsertarE() As String
+            Get
+                Return CType(Me("dgvInsertarE"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

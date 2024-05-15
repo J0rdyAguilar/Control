@@ -121,7 +121,7 @@
   <data name="btnActualizarE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAABD9JREFUWEfFl12MnFMYx3cWLRbdENEKWSEo4oZKCOm4aIVGqMQ0TWYYnV0z856P
+        vgAADr4B6kKxwAAABD9JREFUWEfFl12MnFMYx3cWLRbdENEKWSEo4oZKCOm4aIVGqMQ0TWYYnV0z856P
         97Vd9RlGQmKJC0RvKi56I0QEETeNkAYNaUgk3GgTFUQQ6rKiEb//mTNrZmx337fdxpOcnHOe5znn+Z/n
         650ZyUvGmCuSxJlarTYWWcefGtaem7j0AWP9l9b5n5j/ZnzTtHZNVDkuNGpMusEY/y7G/mDsTJxbV6lU
         lrH+E/5dzL8a4+6N+ktGJS6vGpt+bXlxYm270WicHmUjADhBADqdzqhzbnVi/T5AdKL42Cmx7g2Mf9F2
@@ -142,16 +142,16 @@
         znw4n978A5vYJtvTzTBm/5/hN/0Dq9alxmfJFsoAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="EdificiosBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>610, 17</value>
+  </metadata>
   <metadata name="EdificiosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>237, 17</value>
   </metadata>
-  <metadata name="ControlServiciosDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ControlServiciosDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="DgvActualizarE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>449, 17</value>
   </metadata>
   <metadata name="EdificiosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>449, 17</value>
+    <value>830, 17</value>
   </metadata>
 </root>

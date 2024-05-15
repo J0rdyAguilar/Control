@@ -4,10 +4,10 @@ Public Class conexion
     Public Shared conexion As SqlConnection
     Public Shared Function conectar(usuario As String, pass As String)
         Try
-            conexion = New SqlConnection("Data Source=TUF-GAMING\SQLEXPRESS;Initial Catalog=ControlServicios;User ID=" & usuario & ";Password=" & pass & "")
+            conexion = New SqlConnection("Data Source=TUF-GAMING\SQLEXPRESS;Initial Catalog=Control3;User ID=sa;Password=Cuilco123")
             If (conexion.State = 0) Then
                 conexion.Open()
-                MsgBox("conexion exitosa")
+                'MsgBox("conexion exitosa")
             End If
 
         Catch ex As SqlException
