@@ -29,7 +29,7 @@ Partial Class frmTecnicos
         '
         'btnRealizarSer
         '
-        Me.btnRealizarSer.Location = New System.Drawing.Point(141, 272)
+        Me.btnRealizarSer.Location = New System.Drawing.Point(421, 456)
         Me.btnRealizarSer.Name = "btnRealizarSer"
         Me.btnRealizarSer.Size = New System.Drawing.Size(155, 53)
         Me.btnRealizarSer.TabIndex = 0
@@ -38,7 +38,7 @@ Partial Class frmTecnicos
         '
         'btnVerServi
         '
-        Me.btnVerServi.Location = New System.Drawing.Point(524, 272)
+        Me.btnVerServi.Location = New System.Drawing.Point(804, 456)
         Me.btnVerServi.Name = "btnVerServi"
         Me.btnVerServi.Size = New System.Drawing.Size(155, 53)
         Me.btnVerServi.TabIndex = 1
@@ -49,7 +49,7 @@ Partial Class frmTecnicos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MV Boli", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(72, 32)
+        Me.Label1.Location = New System.Drawing.Point(352, 216)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(646, 157)
         Me.Label1.TabIndex = 14
@@ -59,7 +59,7 @@ Partial Class frmTecnicos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1296, 781)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnVerServi)
         Me.Controls.Add(Me.btnRealizarSer)

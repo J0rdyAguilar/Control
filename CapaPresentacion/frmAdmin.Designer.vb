@@ -42,11 +42,11 @@ Partial Class frmAdmin
         Me.CutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolsMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -59,16 +59,6 @@ Partial Class frmAdmin
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VerClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ActualizarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VerServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TecnicosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ActualizarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VerTecnicosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -77,7 +67,7 @@ Partial Class frmAdmin
         'MenuStrip
         '
         Me.MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.TecnicosToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ToolsMenu})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Size = New System.Drawing.Size(843, 28)
@@ -156,7 +146,7 @@ Partial Class frmAdmin
         Me.UndoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black
         Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
         Me.UndoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(220, 26)
         Me.UndoToolStripMenuItem.Text = "Agregar"
         '
         'RedoToolStripMenuItem
@@ -165,13 +155,13 @@ Partial Class frmAdmin
         Me.RedoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black
         Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
         Me.RedoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y), System.Windows.Forms.Keys)
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(220, 26)
         Me.RedoToolStripMenuItem.Text = "Ver Oficinas"
         '
         'ToolStripSeparator6
         '
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(221, 6)
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(217, 6)
         '
         'CutToolStripMenuItem
         '
@@ -179,7 +169,7 @@ Partial Class frmAdmin
         Me.CutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(220, 26)
         Me.CutToolStripMenuItem.Text = "Actualizar"
         '
         'CopyToolStripMenuItem
@@ -188,38 +178,13 @@ Partial Class frmAdmin
         Me.CopyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(220, 26)
         Me.CopyToolStripMenuItem.Text = "Eliminar"
         '
         'ToolStripSeparator7
         '
         Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(221, 6)
-        '
-        'ViewMenu
-        '
-        Me.ViewMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolBarToolStripMenuItem, Me.StatusBarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.VerClientesToolStripMenuItem})
-        Me.ViewMenu.Name = "ViewMenu"
-        Me.ViewMenu.Size = New System.Drawing.Size(75, 24)
-        Me.ViewMenu.Text = "Clientes"
-        '
-        'ToolBarToolStripMenuItem
-        '
-        Me.ToolBarToolStripMenuItem.Checked = True
-        Me.ToolBarToolStripMenuItem.CheckOnClick = True
-        Me.ToolBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ToolBarToolStripMenuItem.Name = "ToolBarToolStripMenuItem"
-        Me.ToolBarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.ToolBarToolStripMenuItem.Text = "Agregar"
-        '
-        'StatusBarToolStripMenuItem
-        '
-        Me.StatusBarToolStripMenuItem.Checked = True
-        Me.StatusBarToolStripMenuItem.CheckOnClick = True
-        Me.StatusBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.StatusBarToolStripMenuItem.Name = "StatusBarToolStripMenuItem"
-        Me.StatusBarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.StatusBarToolStripMenuItem.Text = "Eliminar"
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(217, 6)
         '
         'ToolsMenu
         '
@@ -233,6 +198,24 @@ Partial Class frmAdmin
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
         Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.OptionsToolStripMenuItem.Text = "Agregar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
+        'ActualizarToolStripMenuItem1
+        '
+        Me.ActualizarToolStripMenuItem1.Name = "ActualizarToolStripMenuItem1"
+        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ActualizarToolStripMenuItem1.Text = "Actualizar"
+        '
+        'VerServiciosToolStripMenuItem
+        '
+        Me.VerServiciosToolStripMenuItem.Name = "VerServiciosToolStripMenuItem"
+        Me.VerServiciosToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.VerServiciosToolStripMenuItem.Text = "Ver Servicios"
         '
         'ToolStrip
         '
@@ -325,67 +308,6 @@ Partial Class frmAdmin
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(54, 20)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
-        'ActualizarToolStripMenuItem
-        '
-        Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
-        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.ActualizarToolStripMenuItem.Text = "Actualizar"
-        '
-        'VerClientesToolStripMenuItem
-        '
-        Me.VerClientesToolStripMenuItem.Name = "VerClientesToolStripMenuItem"
-        Me.VerClientesToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.VerClientesToolStripMenuItem.Text = "Ver Clientes"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
-        'ActualizarToolStripMenuItem1
-        '
-        Me.ActualizarToolStripMenuItem1.Name = "ActualizarToolStripMenuItem1"
-        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
-        Me.ActualizarToolStripMenuItem1.Text = "Actualizar"
-        '
-        'VerServiciosToolStripMenuItem
-        '
-        Me.VerServiciosToolStripMenuItem.Name = "VerServiciosToolStripMenuItem"
-        Me.VerServiciosToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.VerServiciosToolStripMenuItem.Text = "Ver Servicios"
-        '
-        'TecnicosToolStripMenuItem
-        '
-        Me.TecnicosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.EliminarToolStripMenuItem1, Me.ActualizarToolStripMenuItem2, Me.VerTecnicosToolStripMenuItem})
-        Me.TecnicosToolStripMenuItem.Name = "TecnicosToolStripMenuItem"
-        Me.TecnicosToolStripMenuItem.Size = New System.Drawing.Size(79, 24)
-        Me.TecnicosToolStripMenuItem.Text = "Tecnicos"
-        '
-        'AgregarToolStripMenuItem
-        '
-        Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
-        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.AgregarToolStripMenuItem.Text = "Agregar"
-        '
-        'EliminarToolStripMenuItem1
-        '
-        Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
-        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
-        Me.EliminarToolStripMenuItem1.Text = "Eliminar"
-        '
-        'ActualizarToolStripMenuItem2
-        '
-        Me.ActualizarToolStripMenuItem2.Name = "ActualizarToolStripMenuItem2"
-        Me.ActualizarToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
-        Me.ActualizarToolStripMenuItem2.Text = "Actualizar"
-        '
-        'VerTecnicosToolStripMenuItem
-        '
-        Me.VerTecnicosToolStripMenuItem.Name = "VerTecnicosToolStripMenuItem"
-        Me.VerTecnicosToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.VerTecnicosToolStripMenuItem.Text = "Ver Tecnicos"
-        '
         'frmAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -440,18 +362,8 @@ Partial Class frmAdmin
     Friend WithEvents CutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CopyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator7 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ViewMenu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatusBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolsMenu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ActualizarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VerClientesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ActualizarToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents VerServiciosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TecnicosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AgregarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ActualizarToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents VerTecnicosToolStripMenuItem As ToolStripMenuItem
 End Class

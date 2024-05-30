@@ -23,32 +23,29 @@ Partial Class frmEdificiosR
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.EdificiosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DgvVerE = New CapaPresentacion.dgvVerE()
         Me.EdificiosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DgvVerE = New CapaPresentacion.dgvVerE()
-        Me.EdificiosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.EdificiosTableAdapter = New CapaPresentacion.dgvVerETableAdapters.EdificiosTableAdapter()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DgvVerE, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.EdificiosBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvVerE, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'EdificiosBindingSource1
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.DataGridView1.DataSource = Me.EdificiosBindingSource1
-        Me.DataGridView1.Location = New System.Drawing.Point(273, 345)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(426, 174)
-        Me.DataGridView1.TabIndex = 17
+        Me.EdificiosBindingSource1.DataMember = "Edificios"
+        Me.EdificiosBindingSource1.DataSource = Me.DgvVerE
+        '
+        'DgvVerE
+        '
+        Me.DgvVerE.DataSetName = "dgvVerE"
+        Me.DgvVerE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'EdificiosBindingSource
         '
@@ -58,25 +55,24 @@ Partial Class frmEdificiosR
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MV Boli", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(156, 49)
+        Me.Label1.Location = New System.Drawing.Point(117, 40)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(625, 157)
+        Me.Label1.Size = New System.Drawing.Size(504, 125)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "EDIFICIOS"
-        '
-        'DgvVerE
-        '
-        Me.DgvVerE.DataSetName = "dgvVerE"
-        Me.DgvVerE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EdificiosBindingSource1
-        '
-        Me.EdificiosBindingSource1.DataMember = "Edificios"
-        Me.EdificiosBindingSource1.DataSource = Me.DgvVerE
         '
         'EdificiosTableAdapter
         '
         Me.EdificiosTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nomEdificio"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "nomEdificio"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 125
         '
         'DataGridViewTextBoxColumn1
         '
@@ -87,33 +83,38 @@ Partial Class frmEdificiosR
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         Me.DataGridViewTextBoxColumn1.Width = 125
         '
-        'DataGridViewTextBoxColumn2
+        'DataGridView1
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nomEdificio"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "nomEdificio"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 125
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
+        Me.DataGridView1.DataSource = Me.EdificiosBindingSource1
+        Me.DataGridView1.Location = New System.Drawing.Point(205, 280)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(320, 141)
+        Me.DataGridView1.TabIndex = 17
         '
         'frmEdificiosR
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(978, 614)
+        Me.ClientSize = New System.Drawing.Size(734, 499)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmEdificiosR"
         Me.Text = "frmEdificiosR"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DgvVerE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EdificiosBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvVerE, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EdificiosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label1 As Label
 
     Friend WithEvents EdificiosBindingSource As BindingSource
@@ -123,6 +124,7 @@ Partial Class frmEdificiosR
     Friend WithEvents DgvVerE As dgvVerE
     Friend WithEvents EdificiosBindingSource1 As BindingSource
     Friend WithEvents EdificiosTableAdapter As dgvVerETableAdapters.EdificiosTableAdapter
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

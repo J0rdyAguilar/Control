@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="OficinaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 17</value>
+  </metadata>
+  <metadata name="DgvInsertarO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAgregarO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAABD9JREFUWEfFl12MnFMYx3cWLRbdENEKWSEo4oZKCOm4aIVGqMQ0TWYYnV0z856P
+        vQAADr0BR/uQrQAABD9JREFUWEfFl12MnFMYx3cWLRbdENEKWSEo4oZKCOm4aIVGqMQ0TWYYnV0z856P
         97Vd9RlGQmKJC0RvKi56I0QEETeNkAYNaUgk3GgTFUQQ6rKiEb//mTNrZmx337fdxpOcnHOe5znn+Z/n
         650ZyUvGmCuSxJlarTYWWcefGtaem7j0AWP9l9b5n5j/ZnzTtHZNVDkuNGpMusEY/y7G/mDsTJxbV6lU
         lrH+E/5dzL8a4+6N+ktGJS6vGpt+bXlxYm270WicHmUjADhBADqdzqhzbnVi/T5AdKL42Cmx7g2Mf9F2
@@ -142,4 +148,7 @@
         znw4n978A5vYJtvTzTBm/5/hN/0Dq9alxmfJFsoAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="OficinaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>367, 17</value>
+  </metadata>
 </root>

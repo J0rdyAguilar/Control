@@ -22,24 +22,25 @@ Partial Class frmOficinasD
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOficinasD))
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnEliminarO = New System.Windows.Forms.Button()
         Me.txtEliminarO = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DgvEliminarO = New CapaPresentacion.dgvEliminarO()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DgvEliminarO1 = New CapaPresentacion.dgvEliminarO()
+        Me.OficinaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OficinaTableAdapter = New CapaPresentacion.dgvEliminarOTableAdapters.OficinaTableAdapter()
+        Me.NumeroOficinaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NomOficinaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumeroEdiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DgvEliminarO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvEliminarO1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OficinaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(220, 290)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(414, 152)
-        Me.DataGridView1.TabIndex = 19
         '
         'btnEliminarO
         '
@@ -80,6 +81,63 @@ Partial Class frmOficinasD
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "OFICINAS"
         '
+        'DgvEliminarO
+        '
+        Me.DgvEliminarO.DataSetName = "dgvEliminarO"
+        Me.DgvEliminarO.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumeroOficinaDataGridViewTextBoxColumn, Me.NomOficinaDataGridViewTextBoxColumn, Me.NumeroEdiDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.OficinaBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(190, 255)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(543, 184)
+        Me.DataGridView1.TabIndex = 19
+        '
+        'DgvEliminarO1
+        '
+        Me.DgvEliminarO1.DataSetName = "dgvEliminarO"
+        Me.DgvEliminarO1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OficinaBindingSource
+        '
+        Me.OficinaBindingSource.DataMember = "Oficina"
+        Me.OficinaBindingSource.DataSource = Me.DgvEliminarO1
+        '
+        'OficinaTableAdapter
+        '
+        Me.OficinaTableAdapter.ClearBeforeFill = True
+        '
+        'NumeroOficinaDataGridViewTextBoxColumn
+        '
+        Me.NumeroOficinaDataGridViewTextBoxColumn.DataPropertyName = "numeroOficina"
+        Me.NumeroOficinaDataGridViewTextBoxColumn.HeaderText = "numeroOficina"
+        Me.NumeroOficinaDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NumeroOficinaDataGridViewTextBoxColumn.Name = "NumeroOficinaDataGridViewTextBoxColumn"
+        Me.NumeroOficinaDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NumeroOficinaDataGridViewTextBoxColumn.Width = 125
+        '
+        'NomOficinaDataGridViewTextBoxColumn
+        '
+        Me.NomOficinaDataGridViewTextBoxColumn.DataPropertyName = "nomOficina"
+        Me.NomOficinaDataGridViewTextBoxColumn.HeaderText = "nomOficina"
+        Me.NomOficinaDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NomOficinaDataGridViewTextBoxColumn.Name = "NomOficinaDataGridViewTextBoxColumn"
+        Me.NomOficinaDataGridViewTextBoxColumn.Width = 125
+        '
+        'NumeroEdiDataGridViewTextBoxColumn
+        '
+        Me.NumeroEdiDataGridViewTextBoxColumn.DataPropertyName = "numeroEdi"
+        Me.NumeroEdiDataGridViewTextBoxColumn.HeaderText = "numeroEdi"
+        Me.NumeroEdiDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NumeroEdiDataGridViewTextBoxColumn.Name = "NumeroEdiDataGridViewTextBoxColumn"
+        Me.NumeroEdiDataGridViewTextBoxColumn.Width = 125
+        '
         'frmOficinasD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -92,15 +150,24 @@ Partial Class frmOficinasD
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmOficinasD"
         Me.Text = "frmOficinasD"
+        CType(Me.DgvEliminarO, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvEliminarO1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OficinaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btnEliminarO As Button
     Friend WithEvents txtEliminarO As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents DgvEliminarO As dgvEliminarO
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DgvEliminarO1 As dgvEliminarO
+    Friend WithEvents OficinaBindingSource As BindingSource
+    Friend WithEvents OficinaTableAdapter As dgvEliminarOTableAdapters.OficinaTableAdapter
+    Friend WithEvents NumeroOficinaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NomOficinaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NumeroEdiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

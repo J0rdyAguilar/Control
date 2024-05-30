@@ -79,20 +79,60 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dgvActualizarE.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dgvActualizarO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvActualizarO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgvActualizarSS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvActualizarSS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dgvEliminarE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dgvEliminarE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgvEliminarO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvEliminarO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgvEliminarSS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvEliminarSS.xsd</DependentUpon>
     </Compile>
     <Compile Include="dgvInsertarE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dgvInsertarE.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dgvInsertarO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvInsertarO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgvInsertarSS1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvInsertarSS1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dgvVerE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dgvVerE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgvVerO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvVerO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgvVerSS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgvVerSS.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmClientes.Designer.vb">
       <DependentUpon>frmClientes.vb</DependentUpon>
@@ -357,6 +397,28 @@
     <None Include="dgvActualizarE.xss">
       <DependentUpon>dgvActualizarE.xsd</DependentUpon>
     </None>
+    <None Include="dgvActualizarO.xsc">
+      <DependentUpon>dgvActualizarO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvActualizarO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvActualizarO.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvActualizarO.xss">
+      <DependentUpon>dgvActualizarO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvActualizarSS.xsc">
+      <DependentUpon>dgvActualizarSS.xsd</DependentUpon>
+    </None>
+    <None Include="dgvActualizarSS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvActualizarSS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvActualizarSS.xss">
+      <DependentUpon>dgvActualizarSS.xsd</DependentUpon>
+    </None>
     <None Include="dgvEliminarE.xsc">
       <DependentUpon>dgvEliminarE.xsd</DependentUpon>
     </None>
@@ -367,6 +429,28 @@
     </None>
     <None Include="dgvEliminarE.xss">
       <DependentUpon>dgvEliminarE.xsd</DependentUpon>
+    </None>
+    <None Include="dgvEliminarO.xsc">
+      <DependentUpon>dgvEliminarO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvEliminarO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvEliminarO.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvEliminarO.xss">
+      <DependentUpon>dgvEliminarO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvEliminarSS.xsc">
+      <DependentUpon>dgvEliminarSS.xsd</DependentUpon>
+    </None>
+    <None Include="dgvEliminarSS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvEliminarSS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvEliminarSS.xss">
+      <DependentUpon>dgvEliminarSS.xsd</DependentUpon>
     </None>
     <None Include="dgvInsertarE.xsc">
       <DependentUpon>dgvInsertarE.xsd</DependentUpon>
@@ -379,6 +463,28 @@
     <None Include="dgvInsertarE.xss">
       <DependentUpon>dgvInsertarE.xsd</DependentUpon>
     </None>
+    <None Include="dgvInsertarO.xsc">
+      <DependentUpon>dgvInsertarO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvInsertarO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvInsertarO.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvInsertarO.xss">
+      <DependentUpon>dgvInsertarO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvInsertarSS1.xsc">
+      <DependentUpon>dgvInsertarSS1.xsd</DependentUpon>
+    </None>
+    <None Include="dgvInsertarSS1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvInsertarSS1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvInsertarSS1.xss">
+      <DependentUpon>dgvInsertarSS1.xsd</DependentUpon>
+    </None>
     <None Include="dgvVerE.xsc">
       <DependentUpon>dgvVerE.xsd</DependentUpon>
     </None>
@@ -389,6 +495,28 @@
     </None>
     <None Include="dgvVerE.xss">
       <DependentUpon>dgvVerE.xsd</DependentUpon>
+    </None>
+    <None Include="dgvVerO.xsc">
+      <DependentUpon>dgvVerO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvVerO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvVerO.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvVerO.xss">
+      <DependentUpon>dgvVerO.xsd</DependentUpon>
+    </None>
+    <None Include="dgvVerSS.xsc">
+      <DependentUpon>dgvVerSS.xsd</DependentUpon>
+    </None>
+    <None Include="dgvVerSS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgvVerSS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgvVerSS.xss">
+      <DependentUpon>dgvVerSS.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

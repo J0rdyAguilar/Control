@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("Valor"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=34.16.213.5;Initial Catalog=control3;Persist Security Info=True;User "& _ 
+            "ID=sa;Password=Qq58905326Aa.;TrustServerCertificate=True")>  _
+        Public ReadOnly Property Valor1() As String
+            Get
+                Return CType(Me("Valor1"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

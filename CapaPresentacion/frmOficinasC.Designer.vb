@@ -22,6 +22,7 @@ Partial Class frmOficinasC
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOficinasC))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnAgregarO = New System.Windows.Forms.Button()
@@ -29,16 +30,25 @@ Partial Class frmOficinasC
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtNumOfA = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtEdiOfA = New System.Windows.Forms.TextBox()
+        Me.DgvInsertarO = New CapaPresentacion.dgvInsertarO()
+        Me.OficinaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OficinaTableAdapter = New CapaPresentacion.dgvInsertarOTableAdapters.OficinaTableAdapter()
+        Me.NumeroOficinaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NomOficinaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumeroEdiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvInsertarO, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OficinaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
+        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumeroOficinaDataGridViewTextBoxColumn, Me.NomOficinaDataGridViewTextBoxColumn, Me.NumeroEdiDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.OficinaBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(289, 328)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
@@ -94,22 +104,6 @@ Partial Class frmOficinasC
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Oficina"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(267, 228)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 16)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Numero Oficina"
-        '
-        'txtNumOfA
-        '
-        Me.txtNumOfA.Location = New System.Drawing.Point(372, 225)
-        Me.txtNumOfA.Name = "txtNumOfA"
-        Me.txtNumOfA.Size = New System.Drawing.Size(285, 22)
-        Me.txtNumOfA.TabIndex = 11
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -126,6 +120,45 @@ Partial Class frmOficinasC
         Me.txtEdiOfA.Size = New System.Drawing.Size(285, 22)
         Me.txtEdiOfA.TabIndex = 13
         '
+        'DgvInsertarO
+        '
+        Me.DgvInsertarO.DataSetName = "dgvInsertarO"
+        Me.DgvInsertarO.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OficinaBindingSource
+        '
+        Me.OficinaBindingSource.DataMember = "Oficina"
+        Me.OficinaBindingSource.DataSource = Me.DgvInsertarO
+        '
+        'OficinaTableAdapter
+        '
+        Me.OficinaTableAdapter.ClearBeforeFill = True
+        '
+        'NumeroOficinaDataGridViewTextBoxColumn
+        '
+        Me.NumeroOficinaDataGridViewTextBoxColumn.DataPropertyName = "numeroOficina"
+        Me.NumeroOficinaDataGridViewTextBoxColumn.HeaderText = "numeroOficina"
+        Me.NumeroOficinaDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NumeroOficinaDataGridViewTextBoxColumn.Name = "NumeroOficinaDataGridViewTextBoxColumn"
+        Me.NumeroOficinaDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NumeroOficinaDataGridViewTextBoxColumn.Width = 125
+        '
+        'NomOficinaDataGridViewTextBoxColumn
+        '
+        Me.NomOficinaDataGridViewTextBoxColumn.DataPropertyName = "nomOficina"
+        Me.NomOficinaDataGridViewTextBoxColumn.HeaderText = "nomOficina"
+        Me.NomOficinaDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NomOficinaDataGridViewTextBoxColumn.Name = "NomOficinaDataGridViewTextBoxColumn"
+        Me.NomOficinaDataGridViewTextBoxColumn.Width = 125
+        '
+        'NumeroEdiDataGridViewTextBoxColumn
+        '
+        Me.NumeroEdiDataGridViewTextBoxColumn.DataPropertyName = "numeroEdi"
+        Me.NumeroEdiDataGridViewTextBoxColumn.HeaderText = "numeroEdi"
+        Me.NumeroEdiDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NumeroEdiDataGridViewTextBoxColumn.Name = "NumeroEdiDataGridViewTextBoxColumn"
+        Me.NumeroEdiDataGridViewTextBoxColumn.Width = 125
+        '
         'frmOficinasC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -133,8 +166,6 @@ Partial Class frmOficinasC
         Me.ClientSize = New System.Drawing.Size(1075, 599)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtEdiOfA)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtNumOfA)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnAgregarO)
@@ -144,6 +175,8 @@ Partial Class frmOficinasC
         Me.Name = "frmOficinasC"
         Me.Text = "frmOficinasC"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvInsertarO, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OficinaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -155,8 +188,12 @@ Partial Class frmOficinasC
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents txtNumOfA As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtEdiOfA As TextBox
+    Friend WithEvents DgvInsertarO As dgvInsertarO
+    Friend WithEvents OficinaBindingSource As BindingSource
+    Friend WithEvents OficinaTableAdapter As dgvInsertarOTableAdapters.OficinaTableAdapter
+    Friend WithEvents NumeroOficinaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NomOficinaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NumeroEdiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

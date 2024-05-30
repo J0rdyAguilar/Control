@@ -42,11 +42,6 @@ Public Class frmEdificiosU
 
         Catch ex As SqlException
             MsgBox("Error al actualizar edificio: " & ex.Message)
-        Finally
-            ' Asegurarse de cerrar la conexión
-            If conexion.conexion IsNot Nothing AndAlso conexion.conexion.State = ConnectionState.Open Then
-                conexion.conexion.Close()
-            End If
         End Try
         Me.EdificiosTableAdapter.Fill(Me.DgvActualizarE.Edificios)
     End Sub

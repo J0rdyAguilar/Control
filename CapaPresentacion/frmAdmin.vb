@@ -34,11 +34,11 @@ Public Class frmAdmin
         'Utilice My.Computer.Clipboard.GetText() o My.Computer.Clipboard.GetData para recuperar la información del Portapapeles.
     End Sub
 
-    Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ToolBarToolStripMenuItem.Click
+    Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         frmClientesC.Show()
     End Sub
 
-    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles StatusBarToolStripMenuItem.Click
+    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         frmClientesD.Show()
     End Sub
 
@@ -83,11 +83,11 @@ Public Class frmAdmin
         frmOficinasR.Show()
     End Sub
 
-    Private Sub ActualizarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarToolStripMenuItem.Click
+    Private Sub ActualizarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         frmClientesU.Show()
     End Sub
 
-    Private Sub VerClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerClientesToolStripMenuItem.Click
+    Private Sub VerClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         frmClientesR.Show()
     End Sub
 
@@ -111,19 +111,19 @@ Public Class frmAdmin
 
     End Sub
 
-    Private Sub AgregarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarToolStripMenuItem.Click
+    Private Sub AgregarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         frmTecnicosC.Show()
     End Sub
 
-    Private Sub EliminarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem1.Click
+    Private Sub EliminarToolStripMenuItem1_Click(sender As Object, e As EventArgs) 
         frmTecnicosD.Show()
     End Sub
 
-    Private Sub ActualizarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ActualizarToolStripMenuItem2.Click
+    Private Sub ActualizarToolStripMenuItem2_Click(sender As Object, e As EventArgs) 
         frmTecnicosU.Show()
     End Sub
 
-    Private Sub VerTecnicosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerTecnicosToolStripMenuItem.Click
+    Private Sub VerTecnicosToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         frmTecnicosR.Show()
     End Sub
 End Class
